@@ -23,6 +23,7 @@ public class testCase {
 	@Test
 	public void testTicketOrder() {
 		assertNull("order1 has null ticket", order1.getTicket());
+		assertNotNull("order3 has ticket ticket2", order3.getTicket());
 		assertSame("order2 has ticket1", order2.getTicket(), ticket1);
 		assertNotSame("order2 does not have ticket2", order2.getTicket(), ticket2);
 	}
