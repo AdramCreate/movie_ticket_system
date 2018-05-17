@@ -15,7 +15,10 @@ public class ticketOrder {
 		ticket = newTicket;
 		numTickets = tNum;
 		theaterName = tName;
-		totalCost = this.setTotalCost(ticket.getCost(), numTickets);
+		if(newTicket != null)
+			totalCost = this.setTotalCost(ticket.getCost(), numTickets);
+		else
+			totalCost = 0;
 		purchaserName = pName;
 	}
 	
