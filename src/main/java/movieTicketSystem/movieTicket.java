@@ -16,7 +16,7 @@ public class movieTicket {
 	movieTicket(){
 		movieTitle = "";
 		startTime = "00:00";
-		theaterNum = 1;
+		theaterNum = 0;
 		cost = 0.0;
 	}
 
