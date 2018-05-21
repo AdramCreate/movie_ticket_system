@@ -4,17 +4,18 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String input = "";
+		Scanner _scanner = new Scanner(System.in);
+		OrderFunctions _orderFunctions = new OrderFunctions();
+		String _input = "";
 		
 		while(true) {
 			System.out.println("Would you like to purchase a ticket today? y/n");
-			input = scanner.nextLine();
-			if(input.equals("y")) {
-				ticketOrderOperation();
+			_input = _scanner.nextLine();
+			if(_input.equals("y")) {
+				_orderFunctions.ticketOrderOperation();
 				break;
 			} 
-			else if(input.equals("n")) {
+			else if(_input.equals("n")) {
 				System.out.println("System shall now end.");
 				break;
 			}
@@ -22,10 +23,10 @@ public class Main {
 				System.out.println("Invalid input. Please try again.");
 			}
 		}
-		scanner.close();
+		_scanner.close();
 	}
 	
-	public static void ticketOrderOperation() {
+	/*public static void ticketOrderOperation() {
 		movieTicket ticket1 = new movieTicket("Star Wars", "16:00", 5, 7.50);
 		movieTicket ticket2 = new movieTicket("It", "03:00", 3, 12.00);
 		
@@ -72,5 +73,5 @@ public class Main {
 			}
 		}
 		scanner.close();
-	}
+	}*/
 }
