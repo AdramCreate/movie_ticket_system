@@ -11,15 +11,15 @@ public class ticketOrder {
 		this(null, 0, "", "");
 	}
 	
-	ticketOrder(movieTicket newTicket, int tNum, String tName, String pName){
-		ticket = newTicket;
-		numTickets = tNum;
-		theaterName = tName;
-		if(newTicket != null)
+	ticketOrder(movieTicket newTicket_, int tNum_, String tName_, String pName_){
+		ticket = newTicket_;
+		numTickets = tNum_;
+		theaterName = tName_;
+		if(newTicket_ != null)
 			totalCost = this.setTotalCost(ticket.getCost(), numTickets);
 		else
 			totalCost = 0;
-		purchaserName = pName;
+		purchaserName = pName_;
 	}
 	
 	public movieTicket getTicket() {
@@ -42,28 +42,28 @@ public class ticketOrder {
 		return purchaserName;
 	}
 	
-	public void setTicket(movieTicket newTicket) {
-		ticket = newTicket;
+	public void setTicket(movieTicket newTicket_) {
+		ticket = newTicket_;
 	}
 	
-	public void setNumTickets(int tNum) {
-		numTickets = tNum;
+	public void setNumTickets(int tNum_) {
+		numTickets = tNum_;
 	}
 	
-	public void setTheaterName(String tName) {
-		theaterName = tName;
+	public void setTheaterName(String tName_) {
+		theaterName = tName_;
 	}
 	
-	public void setTotalCost(double tCost) {
-		totalCost = tCost;
+	public void setTotalCost(double tCost_) {
+		totalCost = tCost_;
 	}
 	
-	public void setAccountName(String pName) {
-		purchaserName = pName;
+	public void setAccountName(String pName_) {
+		purchaserName = pName_;
 	}
 	
-	public double setTotalCost(double cost, int tNum) {
-		return tNum * cost;
+	public double setTotalCost(double cost_, int tNum_) {
+		return tNum_ * cost_;
 	}
 	
 	public String toString() {

@@ -6,11 +6,11 @@ public class movieTicket {
 	public int theaterNum;
 	public double cost;
 	
-	movieTicket(String title, String time, int tNum, double cost){
-		movieTitle = title;
-		startTime = time;
-		theaterNum = tNum;
-		this.cost = cost;
+	movieTicket(String title_, String time_, int tNum_, double newCost_){
+		movieTitle = title_;
+		startTime = time_;
+		theaterNum = tNum_;
+		cost = newCost_;
 	}
 	
 	movieTicket(){
@@ -36,20 +36,20 @@ public class movieTicket {
 		return this.cost;
 	}
 	
-	public void setTitle(String title) {
-		movieTitle = title;
+	public void setTitle(String title_) {
+		movieTitle = title_;
 	}
 	
-	public void setTime(String time) {
-		startTime = time;
+	public void setTime(String time_) {
+		startTime = time_;
 	}
 	
-	public void setTheaterNum(int tNum) {
-		theaterNum = tNum;
+	public void setTheaterNum(int tNum_) {
+		theaterNum = tNum_;
 	}
 	
-	public void setCost(double cost) {
-		this.cost = cost;
+	public void setCost(double cost_) {
+		this.cost = cost_;
 	}
 	
 	public String toString() {
