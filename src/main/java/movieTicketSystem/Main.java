@@ -20,11 +20,18 @@ public class Main {
 				break;
 			} 
 			else if(_input.equals("n")) {
-				System.out.println("System shall now end.");
+				//System.out.println("System shall now end.");
+				_logger.info("System shall now end.");
 				break;
 			}
 			else {
-				System.out.println("Invalid input. Please try again.");
+				//System.out.println("Invalid input. Please try again.");
+				if(_logger.isDebugEnabled()) {
+					_logger.info("Invalid input. Please try again.");
+				}
+				else {
+					System.out.println("Invalid input. Please try again.");
+				}
 			}
 		}
 		_scanner.close();
