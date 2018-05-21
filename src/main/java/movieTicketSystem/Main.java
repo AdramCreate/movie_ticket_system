@@ -1,5 +1,7 @@
 package movieTicketSystem;
 import java.util.Scanner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Main {
 	
@@ -7,9 +9,11 @@ public class Main {
 		Scanner _scanner = new Scanner(System.in);
 		OrderFunctions _orderFunctions = new OrderFunctions();
 		String _input = "";
+		Logger _logger = LoggerFactory.getLogger(Main.class);
 		
 		while(true) {
-			System.out.println("Would you like to purchase a ticket today? y/n");
+			//System.out.println("Would you like to purchase a ticket today? y/n");
+			_logger.info("Would you like to purchase a ticket today? y/n");
 			_input = _scanner.nextLine();
 			if(_input.equals("y")) {
 				_orderFunctions.ticketOrderOperation();
