@@ -1,4 +1,4 @@
-package movieTicketSystem;
+package models;
 
 public class ticketOrder {
 	public movieTicket ticket;

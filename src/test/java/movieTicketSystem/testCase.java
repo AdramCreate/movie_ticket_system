@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import models.movieTicket;
+import models.ticketOrder;
+
 public class testCase {
 	movieTicket ticket1 = new movieTicket();
 	movieTicket ticket2 = new movieTicket("Star Wars", "16:00", 5, 7.50);

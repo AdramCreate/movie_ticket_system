@@ -1,4 +1,4 @@
-package movieTicketSystem;
+package models;
 
 public class movieTicket {
 	public String movieTitle;

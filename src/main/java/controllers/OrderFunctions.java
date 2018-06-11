@@ -1,6 +1,9 @@
-package movieTicketSystem;
+package controllers;
 
 import java.util.Scanner;
+
+import models.movieTicket;
+import models.ticketOrder;
 
 public class OrderFunctions {
 	movieTicket ticket1 = new movieTicket("Star Wars", "16:00", 5, 7.50);

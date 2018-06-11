@@ -1,4 +1,4 @@
-package movieTicketSystem;
+package controllers;
 import java.util.Scanner;
 
 public class Main {
