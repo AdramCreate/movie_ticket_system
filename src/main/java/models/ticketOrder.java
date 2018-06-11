@@ -7,11 +7,11 @@ public class ticketOrder {
 	public double totalCost;
 	private String purchaserName;
 	
-	ticketOrder(){
+	public ticketOrder(){
 		this(null, 0, "", "");
 	}
 	
-	ticketOrder(movieTicket newTicket_, int tNum_, String tName_, String pName_){
+	public ticketOrder(movieTicket newTicket_, int tNum_, String tName_, String pName_){
 		ticket = newTicket_;
 		numTickets = tNum_;
 		theaterName = tName_;

@@ -6,14 +6,14 @@ public class movieTicket {
 	public int theaterNum;
 	public double cost;
 	
-	movieTicket(String title_, String time_, int tNum_, double newCost_){
+	public movieTicket(String title_, String time_, int tNum_, double newCost_){
 		movieTitle = title_;
 		startTime = time_;
 		theaterNum = tNum_;
 		cost = newCost_;
 	}
 	
-	movieTicket(){
+	public movieTicket(){
 		movieTitle = "";
 		startTime = "00:00";
 		theaterNum = 0;
