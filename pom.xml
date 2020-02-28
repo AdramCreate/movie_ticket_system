@@ -3,6 +3,11 @@
   <groupId>1degreeworld.adrian</groupId>
   <artifactId>movie_ticket_system</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+   <maven.compiler.source>7</maven.compiler.source>
+   <maven.compiler.target>7</maven.compiler.target>
+ </properties>
+
   <dependencies>
   	<dependency>
   		<groupId>junit</groupId>
@@ -10,4 +15,5 @@
   		<version>4.12</version>
   	</dependency>
   </dependencies>
+
 </project>
